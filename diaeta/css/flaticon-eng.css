@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Flaticon-eng";
+  src: url("../icon-fonts/flaticon-eng/Flaticon.eot");
+  src: url("../icon-fonts/flaticon-eng/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../icon-fonts/flaticon-eng/Flaticon.woff2") format("woff2"),
+       url("../icon-fonts/flaticon-eng/Flaticon.woff") format("woff"),
+       url("../icon-fonts/flaticon-eng/Flaticon.ttf") format("truetype"),
+       url("../icon-fonts/flaticon-eng/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon-eng";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+*/
+
+[class^="flaticoneng-"]:before, [class*=" flaticoneng-"]:before,
+[class^="flaticoneng-"]:after, [class*=" flaticoneng-"]:after {   
+	font-family: Flaticon-eng;
+	font-style: normal;
+}
+
+/*
+.fimanager:before {
+      display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    display: block;
+}
+*/
+
+.flaticoneng-001-blueprint:before { content: "\f100"; }
+.flaticoneng-002-engineering:before { content: "\f101"; }
+.flaticoneng-003-compass:before { content: "\f102"; }
+.flaticoneng-004-chart:before { content: "\f103"; }
+.flaticoneng-005-blueprint:before { content: "\f104"; }
+.flaticoneng-006-computer:before { content: "\f105"; }
+.flaticoneng-007-contract:before { content: "\f106"; }
+.flaticoneng-008-gear:before { content: "\f107"; }
+.flaticoneng-009-design:before { content: "\f108"; }
+.flaticoneng-010-gear:before { content: "\f109"; }
+.flaticoneng-011-robotic-arm:before { content: "\f10a"; }
+.flaticoneng-012-robotic-arm:before { content: "\f10b"; }
+.flaticoneng-013-robotic-arm:before { content: "\f10c"; }
+.flaticoneng-014-engineer:before { content: "\f10d"; }
+.flaticoneng-015-engineer:before { content: "\f10e"; }
+.flaticoneng-016-wrench:before { content: "\f10f"; }
+.flaticoneng-017-repair:before { content: "\f110"; }
+.flaticoneng-018-gears:before { content: "\f111"; }
+.flaticoneng-019-worker:before { content: "\f112"; }
+.flaticoneng-020-factory:before { content: "\f113"; }
+.flaticoneng-021-engineering:before { content: "\f114"; }
+.flaticoneng-022-gear:before { content: "\f115"; }
+.flaticoneng-023-gear:before { content: "\f116"; }
+.flaticoneng-024-smartphone:before { content: "\f117"; }
+.flaticoneng-025-gear:before { content: "\f118"; }
+.flaticoneng-026-cpu:before { content: "\f119"; }
+.flaticoneng-027-thinking:before { content: "\f11a"; }
+.flaticoneng-028-tools:before { content: "\f11b"; }
+.flaticoneng-029-world:before { content: "\f11c"; }
+.flaticoneng-030-wrench:before { content: "\f11d"; }
