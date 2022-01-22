@@ -1,0 +1,40 @@
+  AWSTemplateFormatVersion: "2010-09-09"
+
+  Description: "TE-Feb22-Scenario1"
+
+  Mappings:
+
+    SubnetConfig:
+      VPC     : { "CIDR" : "10.0.0.0/16" }
+      Public  : { "CIDR" : "10.0.0.0/24" }
+   
+
+  Resources:
+    S3Bucket:
+      Type: AWS::S3::Bucket
+      Properties:
+         AccessControl: PublicRead
+         WebsiteConfiguration:
+           IndexDocument: index.html
+           ErrorDocument: error.html
+         Tags:
+          - Key: "Name"
+            Value: "Scenario 1 Bucket"
+      DeletionPolicy: Retain
+    BucketPolicy:
+      Type: 'AWS::S3::BucketPolicy'
+      Properties:
+        PolicyDocument:
+          Id: MyPolicy
+          Version: 2012-10-17
+          Statement:
+            - Sid: PublicReadForGetBucketObjects
+              Effect: Allow
+              Principal: '*'
+              Action: 's3:GetObject'
+              Resource: !Join 
+                - ''
+                - - 'arn:aws:s3:::'
+                  - !Ref S3Bucket
+                  - /*
+        Bucket: !Ref S3Bucket
